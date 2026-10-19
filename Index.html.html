@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Ayan Ansari – Graphic Designer & Thumbnail Artist</title>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<style>
+:root{box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px);
+--bg:#fff7f8;--card:#fff;--line:#f0dfe2;--tx:#14141a;--mut:#5f5f6b;--red:#f01e3c;--pill:#fff;--glow:#ffd3da}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#120b0d;--card:#1c1215;--line:#35232a;--tx:#f7eef0;--mut:#b5a3a8;--pill:#1c1215;--glow:#4a1520}}
+:root[data-theme="dark"]{--bg:#120b0d;--card:#1c1215;--line:#35232a;--tx:#f7eef0;--mut:#b5a3a8;--pill:#1c1215;--glow:#4a1520}
+html{scroll-behavior:smooth;scroll-padding-top:100px}
+*,*::before,*::after{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--tx);font-family:Inter,system-ui,sans-serif;line-height:1.55;overflow-x:hidden}
+a{color:inherit;text-decoration:none}
+.wrap{max-width:1100px;margin:0 auto;padding:0 20px}
+.nav{position:fixed;top:calc(env(safe-area-inset-top,0px) + 18px);left:50%;transform:translateX(-50%);z-index:30;width:min(900px,calc(100% - 24px));background:var(--pill);border-radius:999px;box-shadow:0 8px 30px #f01e3c14;border:1px solid var(--line);display:flex;align-items:center;justify-content:space-between;padding:10px 12px 10px 22px}
+.logo{font-weight:700;font-size:18px;display:flex;align-items:center;gap:8px}
+.logo i{width:22px;height:22px;border-radius:50%;border:5px solid var(--tx);display:inline-block}
+.logo span{color:var(--red)}
+.links{display:flex;gap:30px;font-size:14px;color:var(--mut)}
+.links a:hover{color:var(--red)}
+.btn{display:inline-block;background:var(--red);color:#fff;padding:12px 26px;border-radius:999px;font-weight:500;font-size:15px;border:1px solid var(--red);transition:.2s}
+.btn:hover{transform:translateY(-2px);box-shadow:0 8px 20px #f01e3c40}
+.btn.out{background:transparent;color:var(--tx);border-color:var(--line)}
+.hero{text-align:center;padding:150px 0 50px;background:radial-gradient(900px 420px at 15% 20%,var(--glow),transparent 70%),radial-gradient(800px 380px at 90% 10%,var(--glow),transparent 70%)}
+.kick{display:inline-flex;align-items:center;gap:12px;font-size:14px;margin-bottom:18px}
+.kick::before,.kick::after{content:"";width:34px;height:3px;border-radius:3px;background:var(--red)}
+h1{font-size:clamp(34px,6vw,62px);font-weight:600;line-height:1.1;letter-spacing:-.025em;margin:0 auto 18px;max-width:860px}
+h1 em{font-style:normal;color:var(--red)}
+.sub{color:var(--mut);font-size:19px;max-width:560px;margin:0 auto 28px}
+.cta{display:flex;gap:12px;justify-content:center;flex-wrap:wrap;margin-bottom:56px}
+.marq{overflow:hidden;display:grid;gap:18px;padding:6px 0}
+.row{display:flex;gap:18px;width:max-content;animation:l 40s linear infinite}
+.row.r{animation-direction:reverse;animation-duration:48s}
+@keyframes l{to{transform:translateX(-50%)}}
+@media(prefers-reduced-motion:reduce){.row{animation:none}}
+.t{flex:none;width:clamp(240px,30vw,430px);aspect-ratio:16/9;border-radius:18px;border:5px solid var(--card);box-shadow:0 4px 18px #0000001a;position:relative;overflow:hidden;color:#fff;padding:16px;display:flex;flex-direction:column;justify-content:flex-end;font-weight:800;line-height:1;text-transform:uppercase;font-size:clamp(20px,2.6vw,34px);text-shadow:0 3px 0 #0006}
+.t small{font-size:11px;letter-spacing:.12em;font-weight:600;opacity:.85;margin-bottom:6px;text-shadow:none}
+.t::before{content:"";position:absolute;right:-30px;top:-30px;width:55%;aspect-ratio:1;border-radius:50%;background:#ffffff26}
+.t img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;z-index:1}.t.ok{color:transparent;text-shadow:none}.t.ok small,.t.ok::before{display:none}.g1{background:linear-gradient(135deg,#ff3d5a,#ffb23d)}.g2{background:linear-gradient(135deg,#0b3d91,#2fd1ff)}.g3{background:linear-gradient(135deg,#111,#e50914)}.g4{background:linear-gradient(135deg,#0f9d58,#0b2e4f)}.g5{background:linear-gradient(135deg,#6a11cb,#ff5f9e)}.g6{background:linear-gradient(135deg,#f7b733,#fc4a1a)}
+section{padding:84px 0}
+.head{text-align:center;margin-bottom:44px}
+h2{font-size:clamp(28px,4.2vw,44px);font-weight:600;letter-spacing:-.02em;line-height:1.12;margin:0 0 12px}
+.head p{color:var(--mut);max-width:560px;margin:0 auto}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(290px,1fr));gap:18px}
+.card{background:var(--card);border:1px solid var(--line);border-radius:22px;padding:28px;transition:.25s}
+.card:hover{transform:translateY(-4px);box-shadow:0 14px 34px #f01e3c1a}
+.ic{width:46px;height:46px;border-radius:14px;background:#f01e3c1a;display:grid;place-items:center;font-size:21px}
+.card h3{margin:16px 0 8px;font-size:20px;font-weight:600}
+.card p{margin:0;color:var(--mut);font-size:15px}
+.works{display:grid;grid-template-columns:repeat(auto-fill,minmax(300px,1fr));gap:20px}
+.w{display:block}
+.w .t{width:100%;border-width:6px;transition:.25s}
+.w:hover .t{transform:scale(1.02)}
+.w b{display:block;margin-top:12px;font-weight:600}
+.w span{font-size:13px;color:var(--mut)}
+.about{display:grid;grid-template-columns:1.1fr .9fr;gap:36px;align-items:center}
+.about p{color:var(--mut);font-size:17px}
+.stats{display:grid;grid-template-columns:1fr 1fr;gap:14px}
+.stat{background:var(--card);border:1px solid var(--line);border-radius:20px;padding:24px;text-align:center}
+.stat b{display:block;font-size:34px;color:var(--red);font-weight:700;letter-spacing:-.02em}
+.stat span{font-size:13px;color:var(--mut)}
+.tools{display:flex;gap:10px;flex-wrap:wrap;margin-top:16px}
+.tools span{border:1px solid var(--line);background:var(--card);padding:8px 16px;border-radius:999px;font-size:14px}
+.steps{counter-reset:s}
+.steps .card::before{counter-increment:s;content:"0" counter(s);font-size:38px;font-weight:700;color:var(--red)}
+details{background:var(--card);border:1px solid var(--line);border-radius:18px;padding:18px 24px;margin-bottom:10px}
+summary{cursor:pointer;font-weight:600;list-style:none;display:flex;justify-content:space-between}
+summary::after{content:"+";color:var(--red);font-size:22px;line-height:1}
+details[open] summary::after{content:"–"}
+details p{color:var(--mut);margin:12px 0 0}
+.final{text-align:center;border-radius:32px;padding:68px 24px;background:radial-gradient(600px 260px at 50% 0,var(--glow),transparent 70%),var(--card);border:1px solid var(--line)}
+.final p{color:var(--mut);max-width:540px;margin:0 auto 26px}
+footer{padding:36px 0 48px;color:var(--mut);font-size:14px}
+footer .wrap{display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap;align-items:center}
+footer .s{display:flex;gap:20px}
+footer a:hover{color:var(--red)}
+@media(max-width:760px){.links{display:none}.about{grid-template-columns:1fr}}
+</style>
+</head>
+<body>
+<nav class="nav">
+<a class="logo" href="#"><i></i>Ayan<span>Ansari</span></a>
+<div class="links"><a href="#services">Services</a><a href="#work">Projects</a><a href="#about">About</a><a href="#faq">Faq</a></div>
+<a class="btn" href="https://www.instagram.com/ayangraphic/">Hire Me</a>
+</nav>
+
+<header class="hero"><div class="wrap">
+<span class="kick">Graphic Designer · Delhi, India</span>
+<h1>Thumbnails &amp; Designs That Make People <em>Click</em></h1>
+<p class="sub">I’m Ayan, a passionate graphic designer crafting high-CTR thumbnails, posters and social creatives for creators and brands.</p>
+<div class="cta"><a class="btn" href="https://www.behance.net/ayaanjr">View Behance</a><a class="btn out" href="#work">See Projects</a></div>
+</div>
+<div class="marq">
+<div class="row">
+<div class="t g1"><img src="https://mir-s3-cdn-cf.behance.net/projects/404/ad6dfd243587159.Y3JvcCw5MjAsNzIwLDE4MCww.jpg" alt="Mr Beast Minecraft" loading="lazy" referrerpolicy="no-referrer" onload="this.parentNode.classList.add('ok')" onerror="this.remove()"><small>THUMBNAIL</small>Mr Beast Minecraft</div><div class="t g2"><img src="https://mir-s3-cdn-cf.behance.net/projects/404/1bfc62234535211.Y3JvcCwxMzgwLDEwODAsMjcwLDA.jpg" alt="Financial Thumbnail" loading="lazy" referrerpolicy="no-referrer" onload="this.parentNode.classList.add('ok')" onerror="this.remove()"><small>THUMBNAIL</small>Financial Thumbnail</div><div class="t g3"><img src="https://mir-s3-cdn-cf.behance.net/projects/404/116495235719217.Y3JvcCw5MjAsNzIwLDE4MCww.jpg" alt="Laddakh Protest" loading="lazy" referrerpolicy="no-referrer" onload="this.parentNode.classList.add('ok')" onerror="this.remove()"><small>NEWS</small>Laddakh Protest</div><div class="t g4"><img src="https://mir-s3-cdn-cf.behance.net/projects/404/8105fc255203475.Y3JvcCwxMzgwLDEwODAsMjcwLDA.jpg" alt="FC Mobile" loading="lazy" referrerpolicy="no-referrer" onload="this.parentNode.classList.add('ok')" onerror="this.remove()"><small>SPORTS</small>FC Mobile</div><div class="t g5"><img src="https://mir-s3-cdn-cf.behance.net/projects/404/59ce08234068507.Y3JvcCwxMzgwLDEwODAsMjcwLDA.jpg" alt="Rahul Gandhi" loading="lazy" referrerpolicy="no-referrer" onload="this.parentNode.classList.add('ok')" onerror="this.remove()"><small>POLITICS</small>Rahul Gandhi</div><div class="t g6"><img src="https://mir-s3-cdn-cf.behance.net/projects/404/52757b255610927.Y3JvcCwxMDgwLDg0NCwwLDI5Ng.jpg" alt="Matchday" loading="lazy" referrerpolicy="no-referrer" onload="this.parentNode.classList.add('ok')" onerror="this.remove()"><small>POSTER</small>Matchday</div>
+<div class="t g1"><img src="https://mir-s3-cdn-cf.behance.net/projects/404/ad6dfd243587159.Y3JvcCw5MjAsNzIwLDE4MCww.jpg" alt="Mr Beast Minecraft" loading="lazy" referrerpolicy="no-referrer" onload="this.parentNode.classList.add('ok')" onerror="this.remove()"><small>THUMBNAIL</small>Mr Beast Minecraft</div><div class="t g2"><img src="https://mir-s3-cdn-cf.behance.net/projects/404/1bfc62234535211.Y3JvcCwxMzgwLDEwODAsMjcwLDA.jpg" alt="Financial Thumbnail" loading="lazy" referrerpolicy="no-referrer" onload="this.parentNode.classList.add('ok')" onerror="this.remove()"><small>THUMBNAIL</small>Financial Thumbnail</div><div class="t g3"><img src="https://mir-s3-cdn-cf.behance.net/projects/404/116495235719217.Y3JvcCw5MjAsNzIwLDE4MCww.jpg" alt="Laddakh Protest" loading="lazy" referrerpolicy="no-referrer" onload="this.parentNode.classList.add('ok')" onerror="this.remove()"><small>NEWS</small>Laddakh Protest</div><div class="t g4"><img src="https://mir-s3-cdn-cf.behance.net/projects/404/8105fc255203475.Y3JvcCwxMzgwLDEwODAsMjcwLDA.jpg" alt="FC Mobile" loading="lazy" referrerpolicy="no-referrer" onload="this.parentNode.classList.add('ok')" onerror="this.remove()"><small>SPORTS</small>FC Mobile</div><div class="t g5"><img src="https://mir-s3-cdn-cf.behance.net/projects/404/59ce08234068507.Y3JvcCwxMzgwLDEwODAsMjcwLDA.jpg" alt="Rahul Gandhi" loading="lazy" referrerpolicy="no-referrer" onload="this.parentNode.classList.add('ok')" onerror="this.remove()"><small>POLITICS</small>Rahul Gandhi</div><div class="t g6"><img src="https://mir-s3-cdn-cf.behance.net/projects/404/52757b255610927.Y3JvcCwxMDgwLDg0NCwwLDI5Ng.jpg" alt="Matchday" loading="lazy" referrerpolicy="no-referrer" onload="this.parentNode.classList.add('ok')" onerror="this.remove()"><small>POSTER</small>Matchday</div>
+</div>
+<div class="row r">
+<div class="t g3"><img src="https://mir-s3-cdn-cf.behance.net/projects/404/751765256875675.Y3JvcCwxMDgwLDg0NCwwLDI5Ng.jpg" alt="Dodge SRT Charger" loading="lazy" referrerpolicy="no-referrer" onload="this.parentNode.classList.add('ok')" onerror="this.remove()"><small>AUTOMOTIVE</small>Dodge SRT Charger</div><div class="t g5"><img src="https://mir-s3-cdn-cf.behance.net/projects/404/f0cd44256671097.Y3JvcCwxMDgwLDg0NCwwLDI5Ng.jpg" alt="Porsche 911" loading="lazy" referrerpolicy="no-referrer" onload="this.parentNode.classList.add('ok')" onerror="this.remove()"><small>AUTOMOTIVE</small>Porsche 911</div><div class="t g6"><img src="https://mir-s3-cdn-cf.behance.net/projects/404/890176256670953.Y3JvcCwxMDgwLDg0NCwwLDI5Ng.jpg" alt="Pagani Poster" loading="lazy" referrerpolicy="no-referrer" onload="this.parentNode.classList.add('ok')" onerror="this.remove()"><small>AUTOMOTIVE</small>Pagani Poster</div><div class="t g2"><img src="https://mir-s3-cdn-cf.behance.net/projects/404/5758bd256985195.Y3JvcCwxMDgwLDg0NCwwLDExNw.jpg" alt="Minimal Product" loading="lazy" referrerpolicy="no-referrer" onload="this.parentNode.classList.add('ok')" onerror="this.remove()"><small>PRODUCT</small>Minimal Product</div><div class="t g1"><img src="https://mir-s3-cdn-cf.behance.net/projects/404/d5aff3254642555.Y3JvcCwxMzgwLDEwODAsMjcwLDA.jpg" alt="Neymar Jr Links" loading="lazy" referrerpolicy="no-referrer" onload="this.parentNode.classList.add('ok')" onerror="this.remove()"><small>SPORTS</small>Neymar Jr Links</div><div class="t g4"><img src="https://mir-s3-cdn-cf.behance.net/projects/404/378055238033441.Y3JvcCwxMzgwLDEwODAsMjcwLDA.jpg" alt="Zohran Mamdani" loading="lazy" referrerpolicy="no-referrer" onload="this.parentNode.classList.add('ok')" onerror="this.remove()"><small>NEWS</small>Zohran Mamdani</div>
+<div class="t g3"><img src="https://mir-s3-cdn-cf.behance.net/projects/404/751765256875675.Y3JvcCwxMDgwLDg0NCwwLDI5Ng.jpg" alt="Dodge SRT Charger" loading="lazy" referrerpolicy="no-referrer" onload="this.parentNode.classList.add('ok')" onerror="this.remove()"><small>AUTOMOTIVE</small>Dodge SRT Charger</div><div class="t g5"><img src="https://mir-s3-cdn-cf.behance.net/projects/404/f0cd44256671097.Y3JvcCwxMDgwLDg0NCwwLDI5Ng.jpg" alt="Porsche 911" loading="lazy" referrerpolicy="no-referrer" onload="this.parentNode.classList.add('ok')" onerror="this.remove()"><small>AUTOMOTIVE</small>Porsche 911</div><div class="t g6"><img src="https://mir-s3-cdn-cf.behance.net/projects/404/890176256670953.Y3JvcCwxMDgwLDg0NCwwLDI5Ng.jpg" alt="Pagani Poster" loading="lazy" referrerpolicy="no-referrer" onload="this.parentNode.classList.add('ok')" onerror="this.remove()"><small>AUTOMOTIVE</small>Pagani Poster</div><div class="t g2"><img src="https://mir-s3-cdn-cf.behance.net/projects/404/5758bd256985195.Y3JvcCwxMDgwLDg0NCwwLDExNw.jpg" alt="Minimal Product" loading="lazy" referrerpolicy="no-referrer" onload="this.parentNode.classList.add('ok')" onerror="this.remove()"><small>PRODUCT</small>Minimal Product</div><div class="t g1"><img src="https://mir-s3-cdn-cf.behance.net/projects/404/d5aff3254642555.Y3JvcCwxMzgwLDEwODAsMjcwLDA.jpg" alt="Neymar Jr Links" loading="lazy" referrerpolicy="no-referrer" onload="this.parentNode.classList.add('ok')" onerror="this.remove()"><small>SPORTS</small>Neymar Jr Links</div><div class="t g4"><img src="https://mir-s3-cdn-cf.behance.net/projects/404/378055238033441.Y3JvcCwxMzgwLDEwODAsMjcwLDA.jpg" alt="Zohran Mamdani" loading="lazy" referrerpolicy="no-referrer" onload="this.parentNode.classList.add('ok')" onerror="this.remove()"><small>NEWS</small>Zohran Mamdani</div>
+</div></div>
+</header>
+
+<section id="services"><div class="wrap">
+<div class="head"><span class="kick">What I Do</span><h2>Design Services That Drive Attention</h2><p>From scroll-stopping thumbnails to bold posters, I help your content stand out and get seen.</p></div>
+<div class="grid">
+<div class="card"><div class="ic">🖼️</div><h3>Thumbnail Design</h3><p>Eye-catching, high-CTR YouTube thumbnails built to increase clicks and views.</p></div>
+<div class="card"><div class="ic">🏁</div><h3>Poster Design</h3><p>Matchday, automotive and event posters with bold composition and striking visuals.</p></div>
+<div class="card"><div class="ic">📱</div><h3>Social Media Creatives</h3><p>Consistent, on-brand graphics for Instagram and other social platforms.</p></div>
+<div class="card"><div class="ic">✨</div><h3>Photo Manipulation</h3><p>Cutouts, color grading and compositing in Photoshop for a polished, cinematic look.</p></div>
+<div class="card"><div class="ic">🎯</div><h3>Branding &amp; Visuals</h3><p>Visual direction and graphics that strengthen your identity across channels.</p></div>
+<div class="card"><div class="ic">💡</div><h3>Concept &amp; Consulting</h3><p>Ideas and feedback to help your thumbnails and visuals perform better.</p></div>
+</div></div></section>
+
+<section id="work" style="padding-top:0"><div class="wrap">
+<div class="head"><span class="kick">My Work</span><h2>Selected Projects From Behance</h2><p>A look at recent thumbnails, posters and designs. Tap any project to view it in full.</p></div>
+<div class="works">
+<a class="w" href="https://www.behance.net/gallery/256985195/Minimalistic-Product-design"><div class="t g2"><img src="https://mir-s3-cdn-cf.behance.net/projects/404/5758bd256985195.Y3JvcCwxMDgwLDg0NCwwLDExNw.jpg" alt="Minimalistic Product" loading="lazy" referrerpolicy="no-referrer" onload="this.parentNode.classList.add('ok')" onerror="this.remove()"><small>PRODUCT</small>Minimalistic Product</div><b>Minimalistic Product Design</b><span>Product design</span></a>
+<a class="w" href="https://www.behance.net/gallery/256875675/Dodge-SRT-charger"><div class="t g3"><img src="https://mir-s3-cdn-cf.behance.net/projects/404/751765256875675.Y3JvcCwxMDgwLDg0NCwwLDI5Ng.jpg" alt="Dodge SRT Charger" loading="lazy" referrerpolicy="no-referrer" onload="this.parentNode.classList.add('ok')" onerror="this.remove()"><small>AUTOMOTIVE</small>Dodge SRT Charger</div><b>Dodge SRT Charger</b><span>Car poster</span></a>
+<a class="w" href="https://www.behance.net/gallery/256671097/Porche-911"><div class="t g5"><img src="https://mir-s3-cdn-cf.behance.net/projects/404/f0cd44256671097.Y3JvcCwxMDgwLDg0NCwwLDI5Ng.jpg" alt="Porsche 911" loading="lazy" referrerpolicy="no-referrer" onload="this.parentNode.classList.add('ok')" onerror="this.remove()"><small>AUTOMOTIVE</small>Porsche 911</div><b>Porsche 911</b><span>Car poster</span></a>
+<a class="w" href="https://www.behance.net/gallery/256670953/Pagani-Car-poster"><div class="t g6"><img src="https://mir-s3-cdn-cf.behance.net/projects/404/890176256670953.Y3JvcCwxMDgwLDg0NCwwLDI5Ng.jpg" alt="Pagani Poster" loading="lazy" referrerpolicy="no-referrer" onload="this.parentNode.classList.add('ok')" onerror="this.remove()"><small>AUTOMOTIVE</small>Pagani Poster</div><b>Pagani Car Poster</b><span>Poster design</span></a>
+<a class="w" href="https://www.behance.net/gallery/255610927/Matchday-poster-design"><div class="t g4"><img src="https://mir-s3-cdn-cf.behance.net/projects/404/52757b255610927.Y3JvcCwxMDgwLDg0NCwwLDI5Ng.jpg" alt="Matchday" loading="lazy" referrerpolicy="no-referrer" onload="this.parentNode.classList.add('ok')" onerror="this.remove()"><small>SPORTS</small>Matchday</div><b>Matchday Poster Design</b><span>Sports poster</span></a>
+<a class="w" href="https://www.behance.net/gallery/255203475/FC-Mobile"><div class="t g1"><img src="https://mir-s3-cdn-cf.behance.net/projects/404/8105fc255203475.Y3JvcCwxMzgwLDEwODAsMjcwLDA.jpg" alt="FC Mobile" loading="lazy" referrerpolicy="no-referrer" onload="this.parentNode.classList.add('ok')" onerror="this.remove()"><small>GAMING</small>FC Mobile</div><b>FC Mobile</b><span>Gaming creative</span></a>
+<a class="w" href="https://www.behance.net/gallery/254642555/Neymar-Jr-Barcelona-Links"><div class="t g2"><img src="https://mir-s3-cdn-cf.behance.net/projects/404/d5aff3254642555.Y3JvcCwxMzgwLDEwODAsMjcwLDA.jpg" alt="Neymar Jr" loading="lazy" referrerpolicy="no-referrer" onload="this.parentNode.classList.add('ok')" onerror="this.remove()"><small>SPORTS</small>Neymar Jr</div><b>Neymar Jr Barcelona Links</b><span>Sports thumbnail</span></a>
+<a class="w" href="https://www.behance.net/gallery/243587159/Mr-Beast-Minecraft-Thumbnail"><div class="t g1"><img src="https://mir-s3-cdn-cf.behance.net/projects/404/ad6dfd243587159.Y3JvcCw5MjAsNzIwLDE4MCww.jpg" alt="Mr Beast Minecraft" loading="lazy" referrerpolicy="no-referrer" onload="this.parentNode.classList.add('ok')" onerror="this.remove()"><small>THUMBNAIL</small>Mr Beast Minecraft</div><b>Mr Beast Minecraft Thumbnail</b><span>YouTube thumbnail</span></a>
+<a class="w" href="https://www.behance.net/gallery/238033441/Zonran-Mamdani"><div class="t g3"><img src="https://mir-s3-cdn-cf.behance.net/projects/404/378055238033441.Y3JvcCwxMzgwLDEwODAsMjcwLDA.jpg" alt="Zohran Mamdani" loading="lazy" referrerpolicy="no-referrer" onload="this.parentNode.classList.add('ok')" onerror="this.remove()"><small>NEWS</small>Zohran Mamdani</div><b>Zohran Mamdani</b><span>News thumbnail</span></a>
+<a class="w" href="https://www.behance.net/gallery/235719217/LADDAKH-protest"><div class="t g5"><img src="https://mir-s3-cdn-cf.behance.net/projects/404/116495235719217.Y3JvcCw5MjAsNzIwLDE4MCww.jpg" alt="Laddakh Protest" loading="lazy" referrerpolicy="no-referrer" onload="this.parentNode.classList.add('ok')" onerror="this.remove()"><small>NEWS</small>Laddakh Protest</div><b>Laddakh Protest</b><span>News thumbnail</span></a>
+<a class="w" href="https://www.behance.net/gallery/234535211/Financial-thumbnail"><div class="t g6"><img src="https://mir-s3-cdn-cf.behance.net/projects/404/1bfc62234535211.Y3JvcCwxMzgwLDEwODAsMjcwLDA.jpg" alt="Financial" loading="lazy" referrerpolicy="no-referrer" onload="this.parentNode.classList.add('ok')" onerror="this.remove()"><small>FINANCE</small>Financial</div><b>Financial Thumbnail</b><span>YouTube thumbnail</span></a>
+<a class="w" href="https://www.behance.net/gallery/234068507/Rahul-Gandhi-Eye-Catchy-Thumbnail"><div class="t g4"><img src="https://mir-s3-cdn-cf.behance.net/projects/404/59ce08234068507.Y3JvcCwxMzgwLDEwODAsMjcwLDA.jpg" alt="Eye Catchy" loading="lazy" referrerpolicy="no-referrer" onload="this.parentNode.classList.add('ok')" onerror="this.remove()"><small>POLITICS</small>Eye Catchy</div><b>Rahul Gandhi Eye-Catchy Thumbnail</b><span>YouTube thumbnail</span></a>
+</div>
+<div style="text-align:center;margin-top:36px"><a class="btn" href="https://www.behance.net/ayaanjr/projects">See All on Behance</a></div>
+</div></section>
+
+<section id="about" style="background:linear-gradient(var(--glow),transparent)"><div class="wrap about">
+<div><span class="kick" style="margin-bottom:10px">About Me</span><h2>Hi, I’m Ayan Ansari</h2>
+<p>A passionate graphic designer based in Delhi, India, available for freelance and full-time work. I specialize in thumbnails, posters and creative visuals that grab attention and communicate instantly.</p>
+<div class="tools"><span>Photoshop</span><span>Thumbnails</span><span>Posters</span><span>Illustration</span></div>
+<div class="cta" style="justify-content:flex-start;margin:26px 0 0"><a class="btn" href="https://www.instagram.com/ayangraphic/">Follow @ayangraphic</a></div></div>
+<div class="stats"><div class="stat"><b>12+</b><span>Projects on Behance</span></div><div class="stat"><b>580+</b><span>Project views</span></div><div class="stat"><b>Delhi</b><span>India</span></div><div class="stat"><b>Open</b><span>Freelance &amp; full-time</span></div></div>
+</div></section>
+
+<section><div class="wrap">
+<div class="head"><span class="kick">My Process</span><h2>A Simple Process For Great Results</h2></div>
+<div class="grid steps">
+<div class="card"><h3>Discovery</h3><p>I learn about your channel, audience and goals so the design fits your brand.</p></div>
+<div class="card"><h3>Concept</h3><p>Rough ideas and layouts are shared with you for quick feedback.</p></div>
+<div class="card"><h3>Design</h3><p>I craft the final visuals with sharp detail, color and impact.</p></div>
+<div class="card"><h3>Delivery</h3><p>Final files delivered in the right formats, with revisions as needed.</p></div>
+</div></div></section>
+
+<section id="faq" style="padding-top:0"><div class="wrap" style="max-width:760px">
+<div class="head"><span class="kick">Faq</span><h2>Got Questions? Let’s Clear Them Up</h2></div>
+<details><summary>What do you design?</summary><p>Mainly YouTube thumbnails, posters and social media creatives.</p></details>
+<details><summary>Are you available for freelance work?</summary><p>Yes, I’m open to both freelance projects and full-time roles.</p></details>
+<details><summary>How can I contact you?</summary><p>Message me on Instagram at @ayangraphic or through my Behance profile.</p></details>
+<details><summary>Do you offer revisions?</summary><p>Yes, we’ll refine the design together until it’s right.</p></details>
+</div></section>
+
+<section style="padding-top:0"><div class="wrap"><div class="final">
+<span class="kick">Contact</span><h2>Ready to Make Your Content Stand Out?</h2>
+<p>Let’s create thumbnails and designs that capture attention and grow your audience.</p>
+<div class="cta" style="margin:0"><a class="btn" href="https://www.instagram.com/ayangraphic/">DM on Instagram</a><a class="btn out" href="https://www.behance.net/ayaanjr">View Behance</a></div>
+</div></div></section>
+
+<footer><div class="wrap"><a class="logo" href="#"><i></i>Ayan<span>Ansari</span></a><div class="s"><a href="https://www.behance.net/ayaanjr">Behance</a><a href="https://www.instagram.com/ayangraphic/">Instagram</a><a href="http://twitter.com/AyanCreates">Twitter</a></div><div>© 2026 Ayan Ansari</div></div></footer>
+</body>
+</html>
